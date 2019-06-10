@@ -1,0 +1,275 @@
+
+
+body {
+	margin: 0;
+	overflow-x: hidden;
+}
+
+main {
+	position: relative;
+	display: flex;
+}
+
+#blackBg {
+	position: absolute;
+	background-color: black;
+	width: 100vw;
+	height: 100vh;	
+}
+
+.title {
+	font-family: Monofett;
+	font-size: 10em;
+}
+
+#sortirA {
+	position: absolute;
+	top: 30vh;
+	left: 25vw;
+	z-index:2;
+	transition: 1s;	
+	transition-delay: 300ms;
+}
+
+#toulouse{
+	position: absolute;
+	top: 45vh;
+	left: 40vw;
+	z-index:2;
+	transition: 1s;
+	transition-delay: 300ms;
+}
+
+h1 {
+	text-align: center;
+	font-family: Monofett;
+	font-size: 6em;
+}
+
+#leftSide {	
+	position: absolute;
+	left: -50vw;
+	width: 50vw;
+	height: 100vh;
+	background-color: pink;
+	margin: 0;
+	transition-delay: 300ms;
+	transition-duration: 1s;	
+}
+
+#rightSide {
+	position: absolute;	
+	left: 100vw;
+	width: 50vw;
+	height: 100vh;
+	background-color: #6b42f4;
+	margin: 0;	
+	color: white;
+	transition-delay: 300ms;
+	transition-duration: 1s;	
+	overflow-y: auto;
+}
+
+
+
+#googleMap {	
+	position: absolute;	
+	width: 34vw;
+	height: 100vh;
+	margin: 0;	
+	z-index: -1;
+	left: 33vw; 
+}
+
+.hidden {
+	display: none;
+}
+
+
+/*---------------------leftSide---------------------*/
+
+#leftContent {
+	font-family: 'Acme', sans-serif;
+}
+
+/* calendrier */
+#calendar-container {
+	background-color: #00cc99;
+	min-height: 300px;
+	max-width: 33vw;
+	display: block;
+	border-radius: 10px;
+	padding: 5px 10px;
+	margin: 30px 0;
+}
+
+#calendar-title {
+	width: 90%;
+	margin: 5vh auto;
+	text-align: center;
+}
+
+#calendar-table {
+	width: auto;
+	margin:auto;
+}
+
+#calendar-table td, #calendar-table th {
+	padding: 15px 20px;
+	border: none;
+	text-align: center;
+	border-radius: 10px;
+}
+
+td {
+	color: #cccccc;
+}
+
+.colorCell {
+	color: #6600cc;
+}
+
+.today-cell {
+	background-color: #6600cc;
+	color: white;
+}
+
+#date-text {
+    text-align: center;
+}
+
+.btn {
+	display: inline-block;
+	width: 0px;
+	height: 0px;
+	border: 10px solid #00cc99;
+	margin: 1px 10px;
+}
+
+.btn.left {
+    border-right: 10px solid black;
+}
+
+.btn.right {
+    border-left: 10px solid black;
+}
+
+.btn.left:hover {
+	border-right: 10px solid #ccc;
+	cursor: pointer;
+}
+
+.btn.right:hover {
+	border-left: 10px solid #ccc;
+	cursor: pointer;  
+}
+
+#calendar-table td:hover {
+	background-color: #ddd;
+	cursor: pointer;
+	color: #6600cc;;
+}
+
+
+/* boutons de recherche par categories */
+#categoriesContainer {
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.categoriesButton {
+    width: 25%;	
+	max-height: 80px;
+	text-align: center;
+	cursor: pointer;
+}
+
+span {
+	vertical-align:middle;
+	display:inline-block;	
+}
+
+#cultureButton {
+	background-color: #2f26b3;
+	line-height:40px;	
+}
+
+#musicButton {
+	background-color: #d45cd6;
+	line-height:80px;	
+}
+
+#commerceButton {
+	background-color: #5ec8bd;
+	line-height:40px;	
+}
+
+#sportButton {
+	background-color: #ff8922;
+	line-height:40px;	
+}
+
+#insoliteButton {
+	background-color: #f2f064;
+	line-height:80px;	
+}
+
+#natureButton {
+	background-color: #36ba74;
+	line-height:40px;	
+}
+
+#danceButton {
+	background-color: #f34648;
+	line-height:80px;
+}
+
+#traditionButton {
+	background-color: #d44e64;
+	line-height:40px;	
+}
+
+/*-------------------------RightSide - Events------------------------*/
+
+
+#events {
+	font-family: 'Acme', sans-serif;	
+}
+
+h2 {
+	text-align: center;
+}
+
+#events h3 {
+	text-decoration: underline;
+}
+
+/* mini fiche evenement */
+.newEventWindow {
+	padding: 20px;
+	margin: 30px 0;
+}
+
+/* fiche evenement ( !! à finaliser !! ) */
+.eventFullDisplay {
+	position: absolute;
+	z-index: 2;
+	top: 30vh; 
+	left: 2vw;
+	width: 80%;
+	background-color: #6b42aa;
+	border: 2px solid white;
+	border-radius: 20px;
+	padding: 20px;
+}
+
+/* bouton fermeture fiche evenement */
+.closeButton {
+	position: absolute;
+	bottom: 5vh;
+	right: 5vh;
+	cursor: pointer;
+	font-size: 2.5em;
+}

@@ -1,0 +1,58 @@
+Projet "Sortir a Toulouse":
+
+
+Création d'une application web présentant les évènements culturels de la métropole de Toulouse.
+
+
+
+En utilisant l'API disponible, on récupérera les données librement accessible sur le site d'open-data de la metropole: www.data.toulouse-metropole.fr:
+
+
+https://data.toulouse-metropole.fr/explore/dataset/agenda-des-manifestations-culturelles-so-toulouse/information/?sort=date_debut&calendarview=month&dataChart=eyJxdWVyaWVzIjpbeyJjaGFydHMiOlt7InR5cGUiOiJjb2x1bW4iLCJmdW5jIjoiQVZHIiwieUF4aXMiOiJjb2RlX3Bvc3RhbCIsImNvbG9yIjoiI2ZjOGQ2MiIsInNjaWVudGlmaWNEaXNwbGF5Ijp0cnVlfV0sInhBeGlzIjoidHlwZV9kZV9tYW5pZmVzdGF0aW9uIiwibWF4cG9pbnRzIjoiIiwidGltZXNjYWxlIjoiIiwic29ydCI6IiIsImNvbmZpZyI6eyJkYXRhc2V0IjoiYWdlbmRhLWRlcy1tYW5pZmVzdGF0aW9ucy1jdWx0dXJlbGxlcy1zby10b3Vsb3VzZSIsIm9wdGlvbnMiOnsic29ydCI6Ii1kYXRlX2RlYnV0In19fV0sInRpbWVzY2FsZSI6IiIsImRpc3BsYXlMZWdlbmQiOnRydWUsImFsaWduTW9udGgiOnRydWV9&rows=66
+
+Graphiquement le site comporte trois parties:
+- partie 1 "recherche": calendrier pour sélection de date, et proposition de mots-clès
+- partie 2 "plan": affichage de l'api google Map afin de localiser les lieux accueillants les évènements
+- partie 3 "fiche évènements": affichant les détails
+
+Le site présentera ,dés la connection de l'utilisateur, les prochains évènements prévus dans la partie 3 "fiche".
+La partie 1 "recherche" permettra de selectionner une date dans le calendrier ou de seléctionner certains types d'évènements afin de modifier les fiches présentées (3)
+En cliquant sur une fiche (3) un marker apparaitra sur le plan (2)
+
+
+Fonctionnalitées à mettre en place:
+
+- requête AJAX de récupération des donnèes
+OK
+
+- traitement des donnèes
+OK 
+
+- mise en place calendrier
+Bouton next et prev : position à fixer
+
+- fonction de définition automatique de la date ou si action utilisateur sur le calendrier
+Voir pour évènements durant plusieurs jours
+
+- fonction de sélection d'évènement par date
+OK
+
+- fonction de sélection d'évènement par type
+
+
+- mise en page
+Couleures définitives à définir
+version mobile à mettre en place
+
+- animation d'accueil
+
+
+- fonction d'affichage des markers Map
+"que se passe t'il quand on clique sur un marker ?"
+
+- affichage des fiches
+
+
+
+
+

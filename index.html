@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		<title>SortirAToulouse</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Monofett&display=swap" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet"> 
+		<script src="js/Event.js"></script>
+		<script src="js/EventsList.js"></script>
+	</head>
+	
+	<body>
+		<div id="sortirA" class="title">Sortir a</div>
+		
+		<div id="toulouse" class="title">Toulouse</div>	
+		
+		<main>
+	
+			<div id= "blackBg" class=""> </div>
+		
+			<div id= "leftSide">
+				<h1 id="permanentSortirA" class="hidden">Sortir a</h1>
+		
+				<div id="leftContent" class="hidden">	
+
+					
+					<div id="calendar-container">
+					  <h2 id="calendar-title">
+						<div class="btn left"></div>
+						<span> 2019</span>
+						<div class="btn right"></div>
+					  </h2>
+					  <table id="calendar-table">
+						<tr>
+						  <th>Lun</th>
+						  <th>Mar</th>
+						  <th>Mer</th>
+						  <th>Jeu</th>
+						  <th>Ven</th>
+						  <th>Sam</th>
+						  <th>Dim</th>
+						</tr>
+						<tr>
+						  <td></td>
+						  <td>1</td>
+						  <td>2</td>
+						  <td>3</td>
+						  <td>4</td>
+						  <td>5</td>
+						  <td>6</td>
+						</tr>
+						<tr>
+						  <td>7</td>
+						  <td>8</td>
+						  <td>9</td>
+						  <td>10</td>
+						  <td>11</td>
+						  <td>12</td>
+						  <td>13</td>
+						</tr>
+						<tr>
+						  <td>14</td>
+						  <td>15</td>
+						  <td>16</td>
+						  <td>17</td>
+						  <td>18</td>
+						  <td>19</td>
+						  <td>20</td>
+						</tr>
+						<tr>
+						  <td>21</td>
+						  <td>22</td>
+						  <td>23</td>
+						  <td>24</td>
+						  <td>25</td>
+						  <td>26</td>
+						  <td>27</td>
+						</tr>
+						<tr>
+						  <td>28</td>
+						  <td>29</td>
+						  <td>30</td>
+						  <td></td>
+						  <td></td>
+						  <td></td>
+						  <td></td>
+						</tr>
+						
+					  </table>
+					  
+					</div>
+					
+					<div id="categoriesContainer">
+					
+						<div id="cultureButton" class="categoriesButton" data-cat="Culturelle">
+							<span data-cat="Culturelle">manifestations<br/>culturelles</span>
+						</div>
+						<div id="musicButton" class="categoriesButton" data-cat="Musique">
+							<span data-cat="Musique">musique</span>
+						</div>
+						<div id="commerceButton" class="categoriesButton" data-cat="Manifestation commerciale">
+							<span data-cat="Manifestation commerciale">manifestations<br/>commerciales</span>
+						</div>
+						<div id="sportButton" class="categoriesButton" data-cat="Sports et loisirs">
+							<span data-cat="Sports et loisirs">sport<br/>loisirs</span>
+						</div>
+						<div id="insoliteButton" class="categoriesButton" data-cat="Insolite">
+							<span data-cat="Insolite">insolite</span>
+						</div>
+						<div id="natureButton" class="categoriesButton" data-cat="Nature et détente">
+							<span data-cat="Nature et détente">nature<br/>détente</span>
+						</div>
+						<div id="danceButton" class="categoriesButton" data-cat="Danse">
+							<span data-cat="Danse">danse</span>
+						</div>
+						<div id="traditionButton" class="categoriesButton" data-cat="Traditions et folklore">
+							<span data-cat="Traditions et folklore">traditions</br>folklore</span>
+						</div>
+					</div>
+					
+				</div>	
+					
+			</div>
+			
+
+			<div id="googleMap" ></div>
+
+			
+			<div id= "rightSide">
+				<h1 id="permanentToulouse" class="hidden">Toulouse</h1>
+
+				<div id="events" class="hidden">
+					<h2> Prochain évenement</h2>
+				</div>
+			</div>
+			
+		</main>
+
+   
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>		
+
+		<script src="js/main.js"></script>
+
+	</body>
+</html>
