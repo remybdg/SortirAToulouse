@@ -1,8 +1,6 @@
 Projet "Sortir a Toulouse":
 
 
-projet consultable en ligne: www.WebDevRem.fr/SortirAToulouse
-
 Création d'une application web présentant les évènements culturels de la métropole de Toulouse.
 
 

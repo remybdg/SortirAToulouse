@@ -59,7 +59,7 @@ EventsList.prototype.setDbTable = function () {
 	this.dbTable = currentTable;
 	
 	//console.log(this.originalDb);
-	//console.log(this.dbTable);
+	console.log(this.dbTable);
 
 	
 }
@@ -68,6 +68,10 @@ EventsList.prototype.setDbTable = function () {
 EventsList.prototype.setDate = function(date) {
 
 	this.date = new Date(date);
+	if (this.date.valueOf() > 1572134400000) {
+		this.date.setHours(1,0,0,0);
+		return;
+	}
 	this.date.setHours(2,0,0,0);
 };
 
@@ -108,8 +112,8 @@ EventsList.prototype.dayEvents = function() {
 	
 	//on boucle dans l'array des events
 	for (cpt=0; cpt< this.dbTable.length; cpt++) {
+		console.log((this.dbTable[cpt].dateDeb),this.date.valueOf());
 		//si un event a la meme date que la date du jour ou de la date clické sur le calendrier
-		//console.log((this.dbTable[cpt].dateDeb),this.date);
 		if (this.dbTable[cpt].dateDeb.valueOf() == this.date.valueOf()) {
 			this.event = this.dbTable[cpt];
 			//on affiche une mini fiche de l'event dans la partie droite de résultat de recherche
@@ -204,7 +208,7 @@ EventsList.prototype.setCalendarDaysColors = function() {
 			lastDay.setDate(29);
 			break;	
 	}	
-		console.log(CURR_DATE, firstDay, lastDay);	
+		// console.log(CURR_DATE, firstDay, lastDay);	
 		
 	//on boucle dans l'array des events pour récupérer les jours qui contiennent des events
 	for (cpt=0; cpt< this.dbTable.length; cpt++) {
@@ -223,7 +227,7 @@ EventsList.prototype.setCalendarDaysColors = function() {
 		
 		
 	}
-	console.log(daysToColorTable);
+	// console.log("daysToColor", daysToColorTable);
 	//renvoi de l'aaray qui contient les jours 'remplis' sans doublons
 	return daysToColorTable;
 };

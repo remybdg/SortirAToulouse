@@ -168,7 +168,6 @@ Event.prototype.setTel = function(tel) {
 
 /* mini-fiche evenement avec nom et description courte */
 Event.prototype.nextEventWindow = function() {
-	
 	// création d'une div dans la partie droite d'affichage des résultat de recherche
 	this.newEventWindow = document.createElement('div');
 	this.newEventWindow.classList.add("newEventWindow");
@@ -257,7 +256,7 @@ Event.prototype.eventFullDisplay = function(event) {
 //on fais sautiller le marker sur maps au survole  de la mini fiche
 Event.prototype.onmousenterNewEventWindow = function(event) {
     this.marker.setAnimation(google.maps.Animation.BOUNCE);
-	console.log("on");
+	// console.log("on");
     
 };
 
@@ -265,7 +264,7 @@ Event.prototype.onmousenterNewEventWindow = function(event) {
 Event.prototype.onmouseoutNewEventWindow = function(event) {
 	if (document.getElementById("events") !== event.target) return;
     this.marker.setAnimation(null);
-	console.log("off");
+	// console.log("off");
 };
 
 /* affichage du marker maps avec icone personnalisé selon la catégorie principale de l'event */

@@ -20,24 +20,25 @@ main {
 .title {
 	font-family: Monofett;
 	font-size: 10em;
+	z-index:2;
+	transition: 1s;
+	transition-delay: 300ms;
+	width: 100%;
+	text-align: center;
 }
 
 #sortirA {
 	position: absolute;
 	top: 30vh;
-	left: 25vw;
-	z-index:2;
-	transition: 1s;	
-	transition-delay: 300ms;
+	/* left: 25vw; */
+	left: 0;
 }
 
 #toulouse{
 	position: absolute;
 	top: 45vh;
-	left: 40vw;
-	z-index:2;
-	transition: 1s;
-	transition-delay: 300ms;
+	/* left: 40vw; */
+	left: 0
 }
 
 h1 {
@@ -180,7 +181,8 @@ td {
 }
 
 .categoriesButton {
-    width: 25%;	
+	width: 25%;	
+	min-width: 110px;
 	max-height: 80px;
 	text-align: center;
 	cursor: pointer;

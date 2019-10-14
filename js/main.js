@@ -87,10 +87,10 @@ function ouverture2() {
 		document.getElementById("leftSide").style.width = "33vw";
 		document.getElementById("rightSide").style.width = "33vw";	
 		
-	//on attend la fin de l'animation pour résoudre la promesse
-	document.getElementById("toulouse").addEventListener("transitionend", function(event) {		
-		resolve('transition ended');
-	}, false);	
+		// on attend la fin de l'animation pour résoudre la promesse
+		document.getElementById("toulouse").addEventListener("transitionend", function(event) {		
+			resolve('transition ended');
+		}, false);	
 		
 		document.getElementById("toulouse").style.left = "101vw";
 		
